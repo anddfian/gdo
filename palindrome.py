@@ -4,13 +4,13 @@ def clear_screen():
     os.system("cls" if os.name == "nt" else "clear")
 
 def palindrome():
-    text = input("Masukkan Teks/Angka : ")
-    print("Hasil Membalikkan   :", text[::-1])
+    text = input("Masukkan Kata/Frasa/Angka : ")
+    print("Hasil Membalikkan         :", text[::-1])
     print("=====================================")
     if text == text[::-1]:
-        print("Teks/Angka tersebut Palindrome")
+        print("Kata/Frasa/Angka tersebut Palindrome")
     else:
-        print("Teks/Angka tersebut Tidak Palindrome")
+        print("Kata/Frasa/Angka tersebut Tidak Palindrome")
     print("=====================================")
     back_to_menu()
 
@@ -42,4 +42,5 @@ def show_menu():
         exit()
 
 if __name__ == "__main__":
-    show_menu()
+    while True:
+        show_menu()
